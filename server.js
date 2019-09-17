@@ -2,9 +2,11 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const router = express.Router()
+const compression = require('compression')
 const port = process.env.PORT || 9090
 
 app.use(router)
+app.use(compression())
 
 app.use("/static", express.static('./src/app/static/'))
 
