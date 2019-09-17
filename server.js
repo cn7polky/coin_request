@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const router = express.Router()
-const port = process.env.port || 9090
+const port = process.env.PORT || 9090
 
 app.use(router)
 
