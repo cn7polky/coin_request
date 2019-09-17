@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
     })
 }
 
-let host = 'meudominio.com'
+let host = 'https://coins-request.herokuapp.com'
 
 if (location.hostname === "localhost")
     host = 'http://localhost:9090'
