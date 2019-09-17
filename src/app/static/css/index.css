@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#imgs img {
+    width: 300px;
+    margin: 20px;
+}
+
+#imgs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px rgb(28, 124, 233);
+}
+
+.hide {
+    display: none;
+}
+
+#card_index {
+    margin: 10px;
+}
+
+#card_index a {
+    text-decoration: none;
+}
+
+.response_title {
+    font-weight: bold;
+}
