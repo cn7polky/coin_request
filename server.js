@@ -12,6 +12,10 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
 
+router.get('/manifest', (req, res) => {
+    res.sendFile(path.join(__dirname + '/manifest.json'))
+})
+
 router.get('/sw', (req, res) => {
     res.sendFile(path.join(__dirname + '/sw.js'))
 })
