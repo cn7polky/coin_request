@@ -143,9 +143,19 @@ function sendRequest(btn, date) {
 
 document.onreadystatechange = function () {
     // dataBase()
+    let current_url = window.location.href
+
+    if (this.location.hostname !== 'localhost') {
+        if (current_url.indexOf('http:') != -1) {
+            console.log('é http: ' + current_url)
+            this.location.href = (current_url.replace('http:', 'https:'))
+        } else {
+            console.log('não é http: ' + current_url)
+        }
+    }
+
     if (document.readyState === 'complete') {
 
-        let current_url = window.location.href
         const request_regex = /\/request/g
         if (request_regex.test(current_url)) {
             //chama a função sendForm quando atualizar a página
